@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/schoolListFragment">
+
+    <fragment
+        android:id="@+id/schoolListFragment"
+        android:name="com.architjoshi.nyschools.features.schoollist.SchoolListFragment"
+        android:label="Schools">
+        <action
+            android:id="@+id/goToSchoolResults"
+            app:destination="@id/schoolResultsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/schoolResultsFragment"
+        android:name="com.architjoshi.nyschools.features.schoolsatresult.SchoolSATResultsFragment"
+        android:label="SAT Results">
+        <argument
+            android:name="schoolId"
+            app:argType="string" />
+
+        <argument
+            android:name="schoolName"
+            app:argType="string" />
+    </fragment>
+
+</navigation>

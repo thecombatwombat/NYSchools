@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">NY Schools</string>
+    <string name="reading_score">Avg Critical Reading Score: %s</string>
+    <string name="math_score">Avg Math Score: %s</string>
+    <string name="writing_score">Avg Writing Score: %s</string>
+    <string name="no_data">No data available for this school</string>
+</resources>
